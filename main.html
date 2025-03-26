@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+<head>
+<title>new game</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<canvas id="cs"></canvas>
+<script type="text/javascript">
+var cnv=document.getElementById("cs");
+var ctx=cnv.getContext("2d");
+
+cnv.width=365;
+cnv.height=250;
+main();
+function main(){
+ctx.clearRect(0,0,cnv.width,cnv.height);
+
+requestAnimationFrame(main);
+}
+
+</script>
+<style>
+#cs{
+border: 1px solid;
+background-color:#6688dd;
+}
+</style>
+</body>
+</html>
